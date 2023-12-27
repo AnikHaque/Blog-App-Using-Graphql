@@ -15,15 +15,7 @@ const batchUsers = async (ids: number[]): Promise<User[]> => {
 
     console.log("users: ", users);
 
-    /*
-    {
-        1: {id: 1, name: fahim}
-        2: {id: 2, name: fahim}
-        4: {id: 4, name: fahim}
-        10: {id: 10, name: fahim}
-        3: {id: 3, name: fahim}
-    }
-    */
+   
     const userData: { [key: string]: User } = {};
 
     users.forEach((user) => {
